@@ -693,7 +693,7 @@ if __name__ == '__main__':
 
     # Run the simulation, and save the results to "results", output time to "time" and top row number to "top_row_list"
     time, top_row_list, results = grid.simulate(out_dir='../output/', base_name='creep_model',
-                                                dt=86400 * 365 * 100, num_total=100, num_save=50, num_show=50,
+                                                dt=86400 * 365 * 100, num_total=10000, num_save=50, num_show=50,
                                                 max_iter=15, t_max=86400 * 365 * 10e6)
 
     results = np.array(results)
